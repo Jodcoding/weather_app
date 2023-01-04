@@ -35,7 +35,7 @@ async function fetchWeather(city_name){
  */
 function fetchCity(){
 
-    fetch('http://ip-api.com/json/').then(response => response.json()).then(info =>{
+    fetch('https://ipapi.co/json/').then(response => response.json()).then(info =>{
         fetchWeather(info.city)
     })
 }
