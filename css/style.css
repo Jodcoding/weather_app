@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/meteo3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.main-container{
+    width: 90vw;
+    height: 90vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.main-container>*{
+    width: 80%;
+    display: flex;
+}
+
+form{padding-top: 2%;}
+
+form .input-box{
+    border: 1px solid rgba(15, 15, 199, 0.719);
+    padding:  1%;
+    border-radius: 10px;
+    width: 87%;
+    height: 1.2rem;
+    margin-right: 2%;
+}
+
+button{
+    background-color: rgba(15, 15, 199, 0.719);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.9%;
+}
+.input-box input{
+    width: 98%; 
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+.info-container{
+    margin-top: 3%;
+    height: 60%;
+    flex-flow: row wrap;
+
+}
+
+.info-container>*{
+    color: white;
+    height: 50%;
+    width: 50%;
+    /* height: 49.35%;
+    width: 49.35%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+    background-color: rgba(15, 15, 199, 0.719);
+}
+
+.info-container div img[class="svg-img"]{
+    width: 25%;
+    height: 25%;
+}
+
+
+.error-visible{
+    color: #fff;
+    height: 10%;
+    background-color: rgba(245, 7, 7, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.hide-data{
+    display: none;
+}
+
+@media screen and (max-width:650px) {
+    /* .city p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    } */
+    
+}
